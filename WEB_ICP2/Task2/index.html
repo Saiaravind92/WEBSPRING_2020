@@ -1,0 +1,103 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <link href="style.css" type="text/css" rel="stylesheet">
+
+    </head>
+
+    <body>
+      <ul id="nav-bar">
+        <li><a href="#" class="nav-bar-opacity">Gmail</a></li>
+        <li><a href="#" class="nav-bar-opacity">Images</a></li>
+        <li><a href="#"><div id="menu-icon" class="nav-bar-opacity"></div></a></li>
+        <!-- Added notification and user image. -->
+
+        <li><a href="#"><div id="notification-icon" class="notif-icon" </div> <img src="https://img.icons8.com/metro/26/000000/appointment-reminders.png"
+                             alt="notify-icon"></a></li>
+        <li><a href="#"><div id="userimg" class="userimg" </div> <img src="https://randomuser.me/api/portraits/men/36.jpg"
+                                                                                   alt="userimg"></a></li>
+      </ul>
+       <div class="main-content">
+         <div id="logo">
+          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+         </div>
+        <div id="search-bar">
+          <input type="text" name="search">
+          <a href="#" id="speech-link"><img src="https://lh5.googleusercontent.com/OorCLDb2xlVQ4P2MDNCiwAnpv0K1ZrcDwEwRS3sOfDMrnYTnVPvCh7WtFQMbZ_S9u_jzcSLd8g=s128-h128-e365" alt="Speech icon"></a>
+        </div>
+        <div class="buttons">
+          <button name="Google-Search"><p>Google Search</p></button>
+          <button name="Feeling-Lucky"><p>I'm Feeling Lucky</p></button>
+        </div>
+         <!-- Creating flex container. -->
+
+      <div class="flex-container">
+        <div class="flex-item" style="background: white">
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="https://image.shutterstock.com/image-vector/camera-icon-260nw-528723916.jpg" alt="instagram" style="width:70px;height:70px;">
+          </a>
+        </div>
+        <div class="flex-item" style="background: white">
+          <a href="https://www.amazon.com" target="_blank">
+            <img src="https://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG" alt="amazon" style="width:70px;height:70px;">
+          </a>
+        </div>
+        <div class="flex-item" style="background: white">
+          <a href="https://www.youtube.com" target="_blank">
+            <img src="https://image.shutterstock.com/image-vector/red-play-vector-logo-jpg-260nw-378007771.jpg" alt="Youtube" style="width:70px;height:70px;">
+          </a>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="flex-item" style="background: white">
+          <a href="https://www.whatsapp.com" target="_blank">
+            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/WhatsApp-hed-796x419.jpg" alt="Whatsapp" style="width:70px;height:70px;">
+          </a>
+        </div>
+        <div class="flex-item" style="background: white">
+          <a href="https://www.bbc.com" target="_blank">
+            <img src="data:image/png;base64,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" alt="bbc" style="width:70px;height:70px;">
+          </a>
+        </div>
+        <div class="flex-item" style="background: white">
+          <a href="https://www.netflix.com" target="_blank">
+            <img src="https://cdn.vox-cdn.com/thumbor/gWDGV1gpBOpFtVC2FuAPZDcfQt0=/0x0:2400x1349/1820x1213/filters:focal(1008x483:1392x867):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54916477/netflixlogo.0.jpg" alt="cricbuzz" style="width:70px;height:70px;">
+          </a>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="flex-item" style="background: white">
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="https://d1afx9quaogywf.cloudfront.net/sites/default/files/Logos/Facebook400x230.png" alt="EspnCricinfo" style="width:70px;height:70px;">
+          </a>
+        </div>
+        <div class="flex-item" style="background: white">
+          <a href="https://stackoverflow.com" target="_blank">
+            <img src="https://jessehouwing.net/content/images/size/w2000/2018/07/stackoverflow-1.png" alt="Stackoverflow" style="width:70px;height:70px;">
+          </a>
+        </div>
+        <div class="flex-item" style="background: white">
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Linkedin.svg" alt="linkedIn" style="width:70px;height:70px;">
+          </a>
+        </div>
+      </div>
+       </div>
+
+    </body>
+    <footer>
+      <div class="bottom-nav">
+        <ul class="ul-left">
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul class="ul-right">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Settings</a></li>
+
+        </ul>
+      </div>
+    </footer>
+  </html>
