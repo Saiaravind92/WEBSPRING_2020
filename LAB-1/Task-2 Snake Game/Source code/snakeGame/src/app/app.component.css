@@ -31,7 +31,7 @@
   position: relative;
   display: block;
   margin: auto;
-  background-color: blueviolet;
+  background-color: greenyellow;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.60), 0 15px 12px rgba(0, 0, 0, 0.62);
   border-radius: 5px;
 }
@@ -50,7 +50,7 @@
 .start-button {
   padding: 15px;
   text-align: center;
-  background-color: blueviolet;
+  background-color: greenyellow;
   color: white;
   border-radius: 5px;
 }
