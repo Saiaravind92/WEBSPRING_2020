@@ -1,0 +1,64 @@
+.image{
+  height:45em; background-size:cover; width:100%;
+  background-image:url('https://mcdn.wallpapersafari.com/medium/69/39/SIDTnd.jpg');
+  background-position:50% 50%;
+}
+
+div {
+  display: block;
+}
+
+.title {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 8px 20px 20px 20px;
+  color: rgba(0,0,0,.54);
+}
+
+.title {
+  flex: 1 1 auto;
+  float: left;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.title h1 {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  color: darkblue;
+  font-family: cursive;
+}
+
+
+.content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+
+}
+
+.container {
+  display: block;
+}
+
+.title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: 0;*/
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  background-color: antiquewhite;
+}
