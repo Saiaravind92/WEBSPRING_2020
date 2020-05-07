@@ -28,6 +28,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Arrays;
 
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
+
 public class LoginActivity extends AppCompatActivity {
     CallbackManager callbackManager;
     LoginButton loginButton;
@@ -43,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         callbackManager = CallbackManager.Factory.create();
 
         loginButton = (LoginButton) findViewById(R.id.login_button);
-        loginButton.setReadPermissions(Arrays.asList("public_profile","email","user_birthday","user_friends"));
+        loginButton.setReadPermissions(Arrays.asList("public_profile","email"));
         // If you are using in a fragment, call loginButton.setFragment(this);
 
         // Callback registration
@@ -60,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                 });
 
                 Bundle parameters = new Bundle();
-                parameters.putString("fields","id,email,birthday,friends");
+                parameters.putString("fields","id,email");
                 request.setParameters(parameters);
                 request.executeAsync();
             }
@@ -81,8 +84,8 @@ public class LoginActivity extends AppCompatActivity {
         try {
             URL profilePic = new URL("https://graph.facebook.com/"+object.getString("id")+"/picture?width=250&height=250");
             String email = object.getString("email");
-            String birthday = object.getString("birthday");
-            Intent redirect = new Intent(LoginActivity.this,HomeActivity.class).putExtra("email",email).putExtra("birthday",birthday).putExtra("id",object.getString("id"));
+
+            Intent redirect = new Intent(LoginActivity.this,HomeActivity.class).putExtra("email",email).putExtra("id",object.getString("id"));
             startActivity(redirect);
         } catch (MalformedURLException e) {
             e.printStackTrace();

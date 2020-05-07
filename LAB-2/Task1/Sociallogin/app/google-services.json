@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "115585213889",
+    "firebase_url": "https://lab2-1fdb6.firebaseio.com",
+    "project_id": "lab2-1fdb6",
+    "storage_bucket": "lab2-1fdb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115585213889:android:6342985ae32ae3ce98fb40",
+        "android_client_info": {
+          "package_name": "com.umkc.lab3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115585213889-6fs08hvi1oult5ht5e67nmfe2eboofnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzjWU4XpTVxL0Uwlq1UeGywL-GJXhBSvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115585213889-6fs08hvi1oult5ht5e67nmfe2eboofnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

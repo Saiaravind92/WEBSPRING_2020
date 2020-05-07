@@ -28,10 +28,10 @@ public class HomeActivity extends AppCompatActivity {
         String birthday = getIntent().getStringExtra("birthday");
         String id = getIntent().getStringExtra("id");
         TextView lblEmail= findViewById(R.id.lblEmail);
-        TextView lblBirthDay= findViewById(R.id.lblBirthDay);
+        // TextView lblBirthDay= findViewById(R.id.lblBirthDay);
 
         lblEmail.setText(email);
-        lblBirthDay.setText(birthday);
+        //lblBirthDay.setText(birthday);
         ProfilePictureView profilePictureView;
 
         profilePictureView = (ProfilePictureView) findViewById(R.id.friendProfilePicture);

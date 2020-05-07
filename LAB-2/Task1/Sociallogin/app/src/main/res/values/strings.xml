@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="facebook_app_id">592960347976116</string>
+    <string name="fb_login_protocol_scheme">fb592960347976116</string>
+
+</resources>
